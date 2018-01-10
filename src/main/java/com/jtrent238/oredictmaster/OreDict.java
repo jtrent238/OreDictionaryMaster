@@ -32,7 +32,7 @@ public class OreDict {
 			OreDictionary.registerOre("blockTigersEye",     OreSpawnMain.MyTigersEyeBlock);
 			OreDictionary.registerOre("ingotAmethyst",	OreSpawnMain.MyAmethyst);
 				OreDictionary.registerOre("gemAmethyst",	OreSpawnMain.MyAmethyst);
-			OreDictionary.registerOre("ingotRuby",     OreSpawnMain.MyBlockRubyBlock);
+			OreDictionary.registerOre("ingotRuby",     OreSpawnMain.MyRuby);
 				OreDictionary.registerOre("gemRuby",     OreSpawnMain.MyRuby);
 			OreDictionary.registerOre("ingotUranium",     OreSpawnMain.MyIngotUranium);
 			OreDictionary.registerOre("ingotTitanium",     OreSpawnMain.MyIngotTitanium);
