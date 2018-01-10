@@ -346,7 +346,6 @@ public class OreDict {
 				OreDictionary.registerOre("rune",     Itemizer.WaterRune);
 				OreDictionary.registerOre("rune",     Itemizer.WindRune);
 				OreDictionary.registerOre("rune",     Itemizer.WitherRune);
-				
 				OreDictionary.registerOre("plankWood",     Blockizer.planksAchony);
 				OreDictionary.registerOre("plankWood",     Blockizer.planksBloodwood);
 				OreDictionary.registerOre("plankWood",     Blockizer.planksBlueshroom);
