@@ -3,31 +3,34 @@ package com.jtrent238.oredictmaster;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.jtrent238.oredictmaster.ModRegistrations.NeverMineReg;
+import com.jtrent238.oredictmaster.ModRegistrations.OreSpawnReg;
+import com.jtrent238.oredictmaster.ModRegistrations.StevesUniverseMod;
+
 import cpw.mods.fml.common.Loader;
-import danger.orespawn.OreSpawnMain;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
-import net.nevermine.izer.Blockizer;
-import net.nevermine.izer.Itemizer;
 
 public class OreDict {
 
 	public static void addores() {
 
 		
-		if (Loader.isModLoaded("OreSpawn")) {
-			Orespawn.registerOres();
+		if (ModRegistry.isorespawnmodLoaded == true) {
+			OreSpawnReg.RegisterOres();
 		}
 		
-		if (Loader.isModLoaded("nevermine")) {
-			nevermine.registerOres();	
+		if (ModRegistry.isneverminemodLoaded == true) {
+			NeverMineReg.RegisterOres();
 		}
 		
+		if (ModRegistry.issteveuniversemodLoaded == true) {
+			StevesUniverseMod.RegisterOres();
+		}
 
-		
 		addItems();
 	}
 

@@ -8,9 +8,10 @@ import cpw.mods.fml.common.Loader;
 
 public class ModRegistry {
 
-	
-	public static boolean orespawnLoaded;
-	public static boolean nevermineLoaded;
+	private static boolean isjtrent238youtubersLoaded;
+	public static boolean isorespawnmodLoaded;
+	public static boolean isneverminemodLoaded;
+	public static boolean issteveuniversemodLoaded;
 	
 	public ModRegistry(){
 		
@@ -24,22 +25,22 @@ public class ModRegistry {
 		
 
 		if (Loader.isModLoaded("OreSpawn")) {
+				isorespawnmodLoaded = true;
 			System.out.println("OreSpawn Mod Loaded");
-			boolean orespawnLoaded = true;
 			try {
-	            		LogHelper.log(Level.INFO, "Loaded OreSpawn Mod");
+	            LogHelper.log(Level.INFO, "Loaded OreSpawn Mod");
 	        }
-	        	catch (Exception e) {
-	         	   LogHelper.log(Level.SEVERE, "Could not load OreSpawn Mod");
-	        	    e.printStackTrace(System.err);
+	        catch (Exception e) {
+	            LogHelper.log(Level.SEVERE, "Could not load OreSpawn Mod");
+	            e.printStackTrace(System.err);
 	        }
 	    
 		if (Loader.isModLoaded("nevermine")) {
+				isneverminemodLoaded = true;
 			System.out.println("Advent of Ascension Loaded");
-			boolean nevermineLoaded = true;
 			try {
 		           LogHelper.log(Level.INFO, "Loaded Advent of Ascension");
-		  }
+		       }
 		       catch (Exception e) {
 		           LogHelper.log(Level.SEVERE, "Could not load Advent of Ascension");
 		           e.printStackTrace(System.err);
@@ -47,6 +48,19 @@ public class ModRegistry {
 			
 			}
 		
+		if (Loader.isModLoaded("steveuniverse")) {
+			issteveuniversemodLoaded = true;
+		System.out.println("Steve's Universe Loaded");
+		try {
+	           LogHelper.log(Level.INFO, "Loaded Steve's Universe");
+	       }
+	       catch (Exception e) {
+	           LogHelper.log(Level.SEVERE, "Could not load Steve's Universe");
+	           e.printStackTrace(System.err);
+	       }
+		
+		}
+	
 		
 	}
 }
