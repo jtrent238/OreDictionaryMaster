@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.jtrent238.oredictmaster.ModRegistrations.DB600PlasticMod;
+import com.jtrent238.oredictmaster.ModRegistrations.LittleMoreMod;
 import com.jtrent238.oredictmaster.ModRegistrations.NeverMineReg;
 import com.jtrent238.oredictmaster.ModRegistrations.OreSpawnReg;
 import com.jtrent238.oredictmaster.ModRegistrations.StevesUniverseMod;
@@ -23,19 +24,38 @@ public class OreDict {
 		if (ModRegistry.isorespawnmodLoaded == true) {
 			OreSpawnReg.RegisterOres();
 		}
+			else {
+				System.out.println("OreSpawn Mod not loaded ignoring...");
+			}
 		
 		if (ModRegistry.isneverminemodLoaded == true) {
 			NeverMineReg.RegisterOres();
 		}
+			else {
+				System.out.println("Advent of Ascension Mod not loaded ignoring...");
+			}
 		
 		if (ModRegistry.issteveuniversemodLoaded == true) {
 			StevesUniverseMod.RegisterOres();
 		}
-
+			else {
+				System.out.println("Steve's Universe Mod not loaded ignoring...");
+			}
+		
 		if (ModRegistry.issdb600plasticmodLoaded == true) {
 			DB600PlasticMod.RegisterOres();
 		}
-		
+			else {
+				System.out.println("DragonBox600's Plastic Mod not loaded ignoring...");
+			}
+	
+		if (ModRegistry.islittlemoremodLoaded == true) {
+			LittleMoreMod.RegisterOres();
+		}
+			else {
+				System.out.println("Little More Mod not loaded ignoring...");
+			}
+	
 		addItems();
 	}
 

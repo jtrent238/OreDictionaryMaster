@@ -44,6 +44,7 @@ public class NeverMineReg {
 		OreDictionary.registerOre("oreRosite",     Blockizer.oreRosite);
 		OreDictionary.registerOre("ingotRosite",     Itemizer.IngotRosite);
 		OreDictionary.registerOre("ingotRustedIron",     Itemizer.IngotRustedIron);
+		OreDictionary.registerOre("ingotLunar",     Itemizer.IngotLunar);
 		OreDictionary.registerOre("rune",     Itemizer.CompassRune);
 		OreDictionary.registerOre("rune",     Itemizer.DistortionRune);
 		OreDictionary.registerOre("rune",     Itemizer.EnergyRune);

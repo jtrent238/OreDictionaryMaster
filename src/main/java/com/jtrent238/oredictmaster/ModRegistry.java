@@ -13,6 +13,8 @@ public class ModRegistry {
 	public static boolean isneverminemodLoaded;
 	public static boolean issteveuniversemodLoaded;
 	public static boolean issdb600plasticmodLoaded;
+	public static boolean islittlemoremodLoaded;
+	
 	public ModRegistry(){
 		
 		
@@ -69,6 +71,19 @@ public class ModRegistry {
 	       }
 	       catch (Exception e) {
 	           LogHelper.log(Level.SEVERE, "Could not load DragonBox600's Plastic Mod");
+	           e.printStackTrace(System.err);
+	       }
+		
+		}
+		
+		if (Loader.isModLoaded("mlmm")) {
+			islittlemoremodLoaded = true;
+		System.out.println("Little More Mod Loaded");
+		try {
+	           LogHelper.log(Level.INFO, "Loaded Little More Mod");
+	       }
+	       catch (Exception e) {
+	           LogHelper.log(Level.SEVERE, "Could not load Little More Mod");
 	           e.printStackTrace(System.err);
 	       }
 		
