@@ -11,7 +11,8 @@ public class NeverMineReg {
 		OreDictionary.registerOre("oreAmethyst",     Blockizer.oreAmethyst);
 		OreDictionary.registerOre("ingotAmethyst",     Itemizer.AmethystIngot);
 			OreDictionary.registerOre("gemAmethyst",     Itemizer.AmethystIngot);
-		OreDictionary.registerOre("gemAmethyst",     Itemizer.Bloodstone);
+		OreDictionary.registerOre("ingotBloodstone",     Itemizer.Bloodstone);
+			OreDictionary.registerOre("gemBloodstone",     Itemizer.Bloodstone);
 		OreDictionary.registerOre("oreEmberstone",     Blockizer.oreEmberstone);
 		OreDictionary.registerOre("ingotEmberstone",     Itemizer.IngotEmberstone);
 		OreDictionary.registerOre("oreJade",     Blockizer.oreJade);

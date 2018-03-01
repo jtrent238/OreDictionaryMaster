@@ -3,6 +3,7 @@ package com.jtrent238.oredictmaster;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.jtrent238.oredictmaster.ModRegistrations.DB600PlasticMod;
 import com.jtrent238.oredictmaster.ModRegistrations.NeverMineReg;
 import com.jtrent238.oredictmaster.ModRegistrations.OreSpawnReg;
 import com.jtrent238.oredictmaster.ModRegistrations.StevesUniverseMod;
@@ -31,6 +32,10 @@ public class OreDict {
 			StevesUniverseMod.RegisterOres();
 		}
 
+		if (ModRegistry.issdb600plasticmodLoaded == true) {
+			DB600PlasticMod.RegisterOres();
+		}
+		
 		addItems();
 	}
 

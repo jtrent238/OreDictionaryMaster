@@ -12,7 +12,7 @@ public class ModRegistry {
 	public static boolean isorespawnmodLoaded;
 	public static boolean isneverminemodLoaded;
 	public static boolean issteveuniversemodLoaded;
-	
+	public static boolean issdb600plasticmodLoaded;
 	public ModRegistry(){
 		
 		
@@ -61,6 +61,18 @@ public class ModRegistry {
 		
 		}
 	
+		if (Loader.isModLoaded("db600plasticmod")) {
+			issdb600plasticmodLoaded = true;
+		System.out.println("DragonBox600's Plastic Mod Loaded");
+		try {
+	           LogHelper.log(Level.INFO, "Loaded DragonBox600's Plastic Mod");
+	       }
+	       catch (Exception e) {
+	           LogHelper.log(Level.SEVERE, "Could not load DragonBox600's Plastic Mod");
+	           e.printStackTrace(System.err);
+	       }
+		
+		}
 		
 	}
 }
